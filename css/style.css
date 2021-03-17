@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/*
+orange: #dd8407;
+color: #1d4354
+color2: #439bc4
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*this allows us to use rem... 1 rem = 10px to covert 10px to percentage 10/16= 62.5%*/
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #777;
+  color: #1d4354;
+  padding: 3rem; /*Apply padding around the page*/
+
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(29, 66, 84, 0.706),
+      rgba(67, 155, 196, 0.808) /* apply gradient to background image*/
+    ),
+    url(../img/mother-5609202_1920.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; /* Parent Element related to text-box*/
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 5.5rem;
+}
+
+.header__logo:hover {
+  animation: moveInRight 3s ease-in-out; /*Logo animation on hover*/
+}
+
+.heading--primary {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 30%; /* This is in relation to the parent element*/
+  left: 10%;
+  transform: translate(-50% -50%);
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 2.5rem;
+
+  animation-name: moveInLeft; /*Create animation to the heading text*/
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+/*
+ANIMATION PROPERTIES
+animation-delay: 3s;
+animation-iteration-count:3;
+
+*/
+
+.heading-primary--sub {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1.75rem;
+
+  animation: moveInRight 3s ease-in-out; /*Shorthand way of writing this property*/
+}
+
+.heading-primary--sub1 {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 100;
+  letter-spacing: 0.12rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+/* Anmimated Button */
+/* End of Anmimated Button */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  display: inline-block; /* This allows the btn to use margin top*/
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #dd8407;
+  color: #fff;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0; /* Reference to the parent element btn:link,btn:visited*/
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn--white::after {
+  background-color: #dd8407;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
