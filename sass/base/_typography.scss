@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+	font-family: "roboto", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.7;
+	color: $color-grey-dark;
+	color: #1d4354;
+	padding: 3rem; /*Apply padding around the page*/
+
+	box-sizing: border-box;
+}
+
+.heading--primary {
+	color: $color-white;
+	text-transform: capitalize;
+
+	margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+	display: block;
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: 2.5rem;
+
+	animation-name: moveInLeft; /*Create animation to the heading text*/
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+/*
+ANIMATION PROPERTIES
+animation-delay: 3s;
+animation-iteration-count:3;
+
+*/
+
+.heading-primary--sub {
+	display: block;
+	font-size: 4rem;
+	font-weight: 400;
+	letter-spacing: 1.75rem;
+
+	animation: moveInRight 3s ease-in-out; /*Shorthand way of writing this property*/
+}
+
+.heading-primary--sub1 {
+	display: block;
+	font-size: 2.2rem;
+	font-weight: 100;
+	letter-spacing: 0.12rem;
+	width: 70%;
+	margin-top: 2rem;
+}
+
+/* Anmimated Button */
+/* End of Anmimated Button */

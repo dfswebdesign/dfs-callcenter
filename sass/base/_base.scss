@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; /*this allows us to use rem... 1 rem = 10px to covert 10px to percentage 10/16= 62.5%*/
+}
