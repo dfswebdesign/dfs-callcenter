@@ -1,3 +1,4 @@
+//Affects the main in typograpghy module
 @keyframes moveInLeft {
 	0% {
 		opacity: 0;
@@ -13,6 +14,7 @@
 	}
 }
 
+//Affects the sub in typograpghy module
 @keyframes moveInRight {
 	0% {
 		opacity: 0;
@@ -21,6 +23,21 @@
 
 	80% {
 		transform: translateX(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+//Affects the sub1 in typograpghy module
+@keyframes moveInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	80% {
+		transform: translateX(1rem);
 	}
 	100% {
 		opacity: 1;

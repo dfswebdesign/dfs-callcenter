@@ -53,7 +53,46 @@ animation-iteration-count:3;
 	letter-spacing: 0.12rem;
 	width: 70%;
 	margin-top: 2rem;
+	animation: moveInUp 3s ease-in-out;
 }
 
 /* Anmimated Button */
 /* End of Anmimated Button */
+
+// Heading for section-feature
+
+.heading-secondary {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(
+		to right,
+		$color-primary-light,
+		$color-primary
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+	letter-spacing: 2px;
+	transition: all 1s ease-in-out;
+
+	&:hover {
+		transform: skewY(2deg) skewX(15deg);
+		text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.5);
+	}
+}
+
+.heading-tertiary {
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $color-secondary;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
