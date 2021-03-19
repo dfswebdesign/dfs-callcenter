@@ -133,6 +133,15 @@ animation-iteration-count:3;
   padding: 25rem 0;
   margin-top: -20vh; }
 
+.section-benefits {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(29, 67, 84, 0.8), rgba(67, 155, 196, 0.8)), url(../img/lady-laughing.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -12rem; }
+  .section-benefits > * {
+    transform: skewY(7deg); }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -222,6 +231,23 @@ animation-iteration-count:3;
       z-index: 20; }
   .composition:hover__photo:not(:hover) {
     transform: scale(0.2); }
+
+.benefit-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rbga(black, 0.5);
+  transition: transform 0.3s ease-in-out; }
+  .benefit-box__icon {
+    font-size: 10rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #439bc4, #1d4354);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .benefit-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .row {
   max-width: 114rem;

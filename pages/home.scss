@@ -3,3 +3,23 @@
 	padding: 25rem 0;
 	margin-top: -20vh; //This moves the section up to the hero section
 }
+
+.section-benefits {
+	padding: 20rem 0;
+	background-image: linear-gradient(
+			to right,
+			rgba($color-primary, 0.8),
+			rgba($color-primary-light, 0.8)
+				/* apply gradient to background image*/
+		),
+		url(../img/lady-laughing.jpg);
+	background-size: cover;
+	transform: skewY(-7deg);
+	margin-top: -12rem;
+
+	& > * {
+		transform: skewY(
+			7deg
+		); // skew the benefit boxes to its original position
+	}
+}
