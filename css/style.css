@@ -95,10 +95,10 @@ animation-iteration-count:3;
   font-weight: 400;
   letter-spacing: 0.12rem;
   width: 70%;
-  margin-top: 2rem;
   animation: moveInUp 3s ease-in-out;
   margin: 0 auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 6rem; }
 
 /* Anmimated Button */
 /* End of Anmimated Button */
@@ -142,6 +142,12 @@ animation-iteration-count:3;
 .u-margin-bottom-lg {
   margin-bottom: 8rem; }
 
+.u-margin-top-lg {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .section-features {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -158,8 +164,26 @@ animation-iteration-count:3;
 
 .section-clients {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
-  margin-top: -13vh; }
+  padding: 25rem 0 20rem 0;
+  margin-top: -15vh; }
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -187,6 +211,12 @@ animation-iteration-count:3;
   background-color: #dd8407;
   color: #fff; }
   .btn--white::after {
+    background-color: #dd8407; }
+
+.btn--green {
+  background-color: #1d4354;
+  color: #fff; }
+  .btn--green::after {
     background-color: #dd8407; }
 
 .btn::after {
@@ -256,7 +286,7 @@ animation-iteration-count:3;
   font-size: 1.9rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 50px 0px;
   box-shadow: 0 1.5rem 4rem rbga(#000, 0.5);
   transition: transform 0.3s ease-in-out;
   outline-offset: 0.9rem; }
@@ -274,16 +304,16 @@ animation-iteration-count:3;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 60rem; }
   .card__side {
-    height: 52rem;
+    height: 60rem;
     transition: all 1.5s ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 50px 0px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
@@ -313,7 +343,7 @@ animation-iteration-count:3;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: url(../img/carnival-1.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
+      background-image: url(../img/cruiseline.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
     .card__picture--2 {
       background-image: url(../img/home-improvement.jpeg), linear-gradient(to right bottom, #2998ff, #5643fa); }
     .card__picture--3 {
@@ -332,7 +362,7 @@ animation-iteration-count:3;
     color: #fff;
     position: absolute;
     top: 16rem;
-    right: 12rem;
+    right: 0rem;
     width: 75%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
@@ -380,6 +410,54 @@ animation-iteration-count:3;
   .card__info-description {
     font-size: 1.6rem;
     margin-bottom: 3.2rem; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.9rem;
+  transform: skewX(-12deg); }
+  .story > * {
+    transform: skewX(12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: blue;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12.01deg);
+    position: relative; }
+  .story__img {
+    height: 100%;
+    transition: all 0.5s;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden; }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(70%); }
 
 .row {
   max-width: 114rem;

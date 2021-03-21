@@ -1,0 +1,47 @@
+// Feature Section - Images
+
+.composition {
+	position: relative;
+
+	&__photo {
+		width: 80%;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+		border-radius: 0 0 30px;
+		position: absolute;
+		z-index: 10;
+		transition: all 0.8s;
+		outline-offset: 1.5rem; // border spacing around the images
+
+		&--p1 {
+			left: 0;
+			top: -2rem;
+			transform: rotate(-20deg);
+		}
+
+		&--p2 {
+			right: 0;
+			top: 9rem;
+			transform: rotate(0deg);
+		}
+
+		&--p3 {
+			left: 10%;
+			top: 15rem;
+			transform: rotate(20deg);
+		}
+
+		&:hover {
+			outline: 1rem solid $color-primary;
+			transform: scale(1.25) translateY(-0.5rem) rotate(0deg);
+			box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+			z-index: 20;
+		}
+	}
+
+	&:hover {
+		&__photo:not(:hover) {
+			transform: scale(0.2);
+		}
+	}
+}
+// End of Feature Section
