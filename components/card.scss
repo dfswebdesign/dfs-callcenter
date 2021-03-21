@@ -1,0 +1,244 @@
+// Client Oppotunities Now Available Section
+.card {
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 52rem; //increase height of card + line 9
+
+	&__side {
+		height: 52rem;
+		transition: all 1.5s ease-in-out;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		backface-visibility: hidden;
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+		&--front {
+			background-color: $color-white;
+		}
+
+		&--back {
+			transform: rotateY(180deg); //test
+
+			&-1 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-secondary-light,
+					$color-secondary-dark
+				);
+			}
+
+			&-2 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-tertiary-light,
+					$color-tertiary-dark
+				);
+			}
+
+			&-3 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-card-1,
+					$color-card-2
+				);
+			}
+
+			&-4 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-card-3,
+					$color-card-4
+				);
+			}
+
+			&-5 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-card-5,
+					$color-card-6
+				);
+			}
+
+			&-6 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-card-7,
+					$color-card-8
+				);
+			}
+		}
+	}
+
+	&:hover &__side--front {
+		transform: rotateY(-180deg); //this roates card
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+	}
+
+	//Card front styling
+
+	&__picture {
+		background-size: cover;
+		height: 23rem;
+		background-blend-mode: screen;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+		&--1 {
+			background-image: url(../img/carnival-1.jpg),
+				linear-gradient(
+					to right bottom,
+					$color-secondary-light,
+					$color-secondary-dark
+				);
+		}
+
+		&--2 {
+			background-image: url(../img/home-improvement.jpeg),
+				linear-gradient(
+					to right bottom,
+					$color-tertiary-light,
+					$color-tertiary-dark
+				);
+		}
+
+		&--3 {
+			background-image: url(../img/medical.jpg),
+				linear-gradient(to right bottom, $color-card-1, $color-card-2);
+		}
+
+		&--4 {
+			background-image: url(../img/cable-tv.jpg),
+				linear-gradient(to right bottom, $color-card-3, $color-card-4);
+		}
+
+		&--5 {
+			background-image: url(../img/accountant.jpg),
+				linear-gradient(to right bottom, $color-card-5, $color-card-6);
+		}
+
+		&--6 {
+			background-image: url(../img/fitness-1.jpg),
+				linear-gradient(to right bottom, $color-card-7, $color-card-8);
+		}
+	}
+
+	&__heading {
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: right;
+		color: $color-white;
+		position: absolute;
+		top: 16rem;
+		right: 12rem;
+		width: 75%;
+	}
+
+	&__heading-span {
+		padding: 1rem 1.5rem;
+		box-decoration-break: clone;
+		-webkit-box-decoration-break: clone;
+		&--1 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-secondary-light, 1),
+				rgba($color-secondary-dark, 0.85)
+			);
+		}
+
+		&--2 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-tertiary-light, 1),
+				rgba($color-tertiary-dark, 0.85)
+			);
+		}
+
+		&--3 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-card-1, 1),
+				rgba($color-card-2, 0.85)
+			);
+		}
+
+		&--4 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-card-3, 1),
+				rgba($color-card-4, 0.85)
+			);
+		}
+
+		&--5 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-card-5, 1),
+				rgba($color-card-6, 0.85)
+			);
+		}
+
+		&--6 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-card-7, 1),
+				rgba($color-card-8, 0.85)
+			);
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+		ul {
+			list-style: none;
+			width: 95%;
+			margin: 0 auto;
+
+			li {
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-light-2;
+				}
+			}
+		}
+	}
+
+	//Front Styling
+
+	&__cta {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 95%;
+	}
+
+	&__info {
+		text-align: center;
+		color: $color-white;
+	}
+
+	&__info-title {
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	&__info-description {
+		font-size: 1.6rem;
+		margin-bottom: 3.2rem;
+	}
+}

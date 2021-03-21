@@ -1,4 +1,4 @@
-// Feature Section
+// Feature Section - Images
 
 .composition {
 	position: relative;
@@ -10,7 +10,7 @@
 		position: absolute;
 		z-index: 10;
 		transition: all 0.8s;
-		outline-offset: 1.5rem;
+		outline-offset: 1.5rem; // border spacing around the images
 
 		&--p1 {
 			left: 0;

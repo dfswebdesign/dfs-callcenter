@@ -89,6 +89,17 @@ animation-iteration-count:3;
   margin-top: 2rem;
   animation: moveInUp 3s ease-in-out; }
 
+.heading-primary--sub2 {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+  width: 70%;
+  margin-top: 2rem;
+  animation: moveInUp 3s ease-in-out;
+  margin: 0 auto;
+  margin-top: 2rem; }
+
 /* Anmimated Button */
 /* End of Anmimated Button */
 .heading-secondary {
@@ -104,6 +115,9 @@ animation-iteration-count:3;
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .heading-secondary-paragraph {
+    width: 75%;
+    margin: 0 auto; }
 
 .heading-tertiary {
   font-size: 1.9rem;
@@ -141,6 +155,11 @@ animation-iteration-count:3;
   margin-top: -12rem; }
   .section-benefits > * {
     transform: skewY(7deg); }
+
+.section-clients {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -13vh; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -234,20 +253,133 @@ animation-iteration-count:3;
 
 .benefit-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rbga(black, 0.5);
-  transition: transform 0.3s ease-in-out; }
+  box-shadow: 0 1.5rem 4rem rbga(#000, 0.5);
+  transition: transform 0.3s ease-in-out;
+  outline-offset: 0.9rem; }
   .benefit-box__icon {
-    font-size: 10rem;
+    font-size: 8.5rem;
     margin-bottom: 0.5rem;
     background-image: linear-gradient(to right, #439bc4, #1d4354);
     -webkit-background-clip: text;
     color: transparent; }
   .benefit-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+    transform: translateY(-1.5rem) scale(1.03);
+    outline: 0.5rem solid #dd8407; }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #98d685, #4d8d66); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #d1585c, #df1a22); }
+      .card__side--back-5 {
+        background-image: linear-gradient(to right bottom, #00af91, #007965); }
+      .card__side--back-6 {
+        background-image: linear-gradient(to right bottom, #e97e5a, #ff4000); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card__picture--1 {
+      background-image: url(../img/carnival-1.jpg), linear-gradient(to right bottom, #ffb900, #ff7730); }
+    .card__picture--2 {
+      background-image: url(../img/home-improvement.jpeg), linear-gradient(to right bottom, #2998ff, #5643fa); }
+    .card__picture--3 {
+      background-image: url(../img/medical.jpg), linear-gradient(to right bottom, #98d685, #4d8d66); }
+    .card__picture--4 {
+      background-image: url(../img/cable-tv.jpg), linear-gradient(to right bottom, #d1585c, #df1a22); }
+    .card__picture--5 {
+      background-image: url(../img/accountant.jpg), linear-gradient(to right bottom, #00af91, #007965); }
+    .card__picture--6 {
+      background-image: url(../img/fitness-1.jpg), linear-gradient(to right bottom, #e97e5a, #ff4000); }
+  .card__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 16rem;
+    right: 12rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, #2998ff, rgba(86, 67, 250, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, #98d685, rgba(77, 141, 102, 0.85)); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, #d1585c, rgba(223, 26, 34, 0.85)); }
+    .card__heading-span--5 {
+      background-image: linear-gradient(to right bottom, #00af91, rgba(0, 121, 101, 0.85)); }
+    .card__heading-span--6 {
+      background-image: linear-gradient(to right bottom, #e97e5a, rgba(255, 64, 0, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 95%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 95%; }
+  .card__info {
+    text-align: center;
+    color: #fff; }
+  .card__info-title {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 300; }
+  .card__info-description {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem; }
 
 .row {
   max-width: 114rem;
