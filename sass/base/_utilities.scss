@@ -1,21 +1,27 @@
+// The important keyword can be used in the utility class but preferably not within the css code
+
 .u-center-text {
-	text-align: center;
+	text-align: center !important;
 }
 
 .u-margin-bottom-sml {
-	margin-bottom: 1rem;
+	margin-bottom: 1rem !important;
 }
 
 .u-margin-bottom-med {
-	margin-bottom: 4rem;
+	margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-lg {
-	margin-bottom: 8rem;
+	margin-bottom: 8rem !important;
 }
 
 .u-margin-top-lg {
-	margin-top: 8rem;
+	margin-top: 8rem !important;
+}
+
+.u-margin-top-med {
+	margin-top: 6rem !important;
 }
 
 .u-margin-top-huge {

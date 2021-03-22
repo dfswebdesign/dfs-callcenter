@@ -140,6 +140,13 @@
 		top: 16rem;
 		right: 0rem; //this property controls the position of the cards heading
 		width: 75%;
+
+		&-2 {
+			text-align: center;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 1.5rem;
+		}
 	}
 
 	&__heading-span {
@@ -196,6 +203,10 @@
 	}
 
 	&__details {
+		// &-2 {
+		// 	text-align: center;
+		// 	font-weight: 400;
+		// }
 		padding: 3rem;
 		ul {
 			list-style: none;

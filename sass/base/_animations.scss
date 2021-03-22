@@ -44,3 +44,86 @@
 		transform: translate(0);
 	}
 }
+
+// Bounce Effect
+
+.bounce {
+	// position: absolute;
+	bottom: 0rem;
+	left: 0;
+	width: 25rem;
+	height: 5.5rem;
+	border: 1px solid $color-secondary;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+	text-align: center;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-3rem);
+	}
+	60% {
+		-webkit-transform: translateY(-1.5rem);
+	}
+}
+
+@-moz-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+	}
+	40% {
+		-moz-transform: translateY(-3rem);
+	}
+	60% {
+		-moz-transform: translateY(-1.5rem);
+	}
+}
+
+@-o-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-o-transform: translateY(0);
+	}
+	40% {
+		-o-transform: translateY(-3rem);
+	}
+	60% {
+		-o-transform: translateY(-1.5rem);
+	}
+}
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-3rem);
+	}
+	60% {
+		transform: translateY(-1.5rem);
+	}
+}
