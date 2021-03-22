@@ -825,8 +825,9 @@ $ - any class that ends with "col-"
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100;
   z-index: 1500;
+  visibility: hidden;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -868,7 +869,8 @@ $ - any class that ends with "col-"
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  visibility: visible; }
 
 .navigation__icon {
   position: relative;
