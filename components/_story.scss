@@ -7,7 +7,7 @@
 	padding-left: 9rem;
 	font-size: $default-font-size;
 
-	transform: skewX(-12deg);
+	transform: skewX(-13deg);
 
 	& > * {
 		transform: skewX(12deg);
@@ -17,7 +17,6 @@
 		width: 15rem;
 		height: 15rem;
 		float: left;
-		background-color: blue;
 		shape-outside: circle(50% at 50% 50%);
 		-webkit-shape-outside: circle(50% at 50% 50%);
 
