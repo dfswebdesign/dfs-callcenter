@@ -7,7 +7,6 @@ body {
 	line-height: 1.7;
 	color: $color-grey-dark;
 	color: #1d4354;
-	padding: 3rem; /*Apply padding around the page*/
 
 	box-sizing: border-box;
 }
@@ -28,6 +27,11 @@ body {
 	animation-name: moveInLeft; /*Create animation to the heading text*/
 	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
+
+	@include respond(phone) {
+		letter-spacing: 1rem;
+		font-size: 5rem;
+	}
 }
 
 /*
@@ -44,6 +48,10 @@ animation-iteration-count:3;
 	letter-spacing: 1.75rem;
 
 	animation: moveInRight 3s ease-in-out; /*Shorthand way of writing this property*/
+
+	@include respond(phone) {
+		letter-spacing: 0.5rem;
+	}
 }
 
 .heading-primary--sub1 {
@@ -108,6 +116,14 @@ animation-iteration-count:3;
 	letter-spacing: 2px;
 	transition: all 1s ease-in-out;
 	padding-top: 10rem;
+
+	@include respond(tab-port) {
+		font-size: 4rem;
+	}
+
+	@include respond(phone) {
+		font-size: 3.5rem;
+	}
 
 	&:hover {
 		transform: skewY(2deg) skewX(15deg);

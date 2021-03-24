@@ -12,22 +12,51 @@
 		transition: all 0.8s;
 		outline-offset: 1.5rem; // border spacing around the images
 
+		@include respond(tab-port) {
+			float: left;
+			position: relative;
+			width: 33.33333%;
+			box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+		}
+
 		&--p1 {
 			left: 0;
 			top: -2rem;
 			transform: rotate(-20deg);
+
+			@include respond(tab-port) {
+				top: 1rem;
+				transform: rotate(0deg);
+				border-radius: 1px;
+				transform: scale(1.2);
+			}
 		}
 
 		&--p2 {
 			right: 0;
 			top: 9rem;
 			transform: rotate(0deg);
+
+			@include respond(tab-port) {
+				top: 0;
+				border-radius: 1px;
+				transform: scale(1.4);
+				z-index: 2000;
+			}
 		}
 
 		&--p3 {
 			left: 10%;
 			top: 15rem;
 			transform: rotate(20deg);
+
+			@include respond(tab-port) {
+				top: 1rem;
+				left: 0;
+				transform: rotate(0deg);
+				border-radius: 1px;
+				transform: scale(1.2);
+			}
 		}
 
 		&:hover {
