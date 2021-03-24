@@ -19,7 +19,7 @@
 
 	& > * {
 		transform: skewY(
-			7deg
+			-1deg
 		); // skew the benefit boxes to its original position
 	}
 }
@@ -43,6 +43,8 @@
 		$color-primary,
 		$color-primary-light
 	);
+	transform: skewY(-7deg);
+	// margin-top: -12rem;
 }
 
 .contact {
@@ -60,16 +62,18 @@
 	background-position: center;
 	border-radius: $border-radius;
 	box-shadow: 0 1.5 4rem rgba($color-black, 0.8);
+	transform: skewY(7deg);
 
 	// height: 50rem;
 
 	&__form {
 		width: 50%;
-		padding: 6rem;
+		padding: 2.1rem;
 	}
 }
 
 .accordion {
-	padding: 3rem 0.1rem;
+	// padding: 15rem 0.1rem;
+	padding-bottom: 15rem;
 	background-image: $color-primary;
 }

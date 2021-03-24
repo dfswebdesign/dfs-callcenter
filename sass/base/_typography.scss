@@ -107,6 +107,7 @@ animation-iteration-count:3;
 	color: transparent;
 	letter-spacing: 2px;
 	transition: all 1s ease-in-out;
+	padding-top: 10rem;
 
 	&:hover {
 		transform: skewY(2deg) skewX(15deg);

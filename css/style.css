@@ -188,7 +188,8 @@ animation-iteration-count:3;
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  padding-top: 10rem; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
@@ -240,7 +241,7 @@ animation-iteration-count:3;
   transform: skewY(-7deg);
   margin-top: -12rem; }
   .section-benefits > * {
-    transform: skewY(7deg); }
+    transform: skewY(-1deg); }
 
 .section-clients {
   background-color: #f7f7f7;
@@ -253,20 +254,22 @@ animation-iteration-count:3;
 
 .section-contact {
   padding: 15rem;
-  background-image: linear-gradient(to right bottom, #1d4354, #439bc4); }
+  background-image: linear-gradient(to right bottom, #1d4354, #439bc4);
+  transform: skewY(-7deg); }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9), 50%, transparent 50%), url(../img/contact-img-3.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 1.3rem;
-  box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.8); }
+  box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.8);
+  transform: skewY(7deg); }
   .contact__form {
     width: 50%;
-    padding: 6rem; }
+    padding: 2.1rem; }
 
 .accordion {
-  padding: 3rem 0.1rem;
+  padding-bottom: 15rem;
   background-image: #1d4354; }
 
 .bg-video {
@@ -284,12 +287,12 @@ animation-iteration-count:3;
     object-fit: cover; }
 
 .form__group:not(:last-child) {
-  margin-bottom: 0.1rem; }
+  margin-bottom: 0.5rem; }
 
 .form__input {
   font-size: 1.5rem;
   font-family: inherit;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   color: inherit;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -601,7 +604,7 @@ animation-iteration-count:3;
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.9rem;
-  transform: skewX(-13deg); }
+  transform: skewX(-12deg); }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -723,7 +726,8 @@ animation-iteration-count:3;
     cursor: pointer;
     transition: 0.3s ease;
     text-align: center;
-    box-shadow: 0 5.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 5.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem; }
     .accordion__title:hover {
       background: #dd8407; }
 
@@ -803,15 +807,17 @@ $ - any class that ends with "col-"
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 20rem 0;
   font-size: 1.6rem;
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  margin-top: -12rem; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
     width: 45rem;
-    height: auto; }
+    height: auto;
+    padding-top: 10rem; }
   .footer__navigation {
     border-top: 1px solid #999;
     padding-top: 2rem;
