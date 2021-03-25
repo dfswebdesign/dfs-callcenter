@@ -326,7 +326,7 @@ animation-iteration-count:3;
   margin-top: -15vh; }
   @media (max-width: 56.25em) {
     .section-clients {
-      padding: 10rem 0 5rem 0; } }
+      padding: 100rem 0 5rem 0; } }
   @media (max-width: 37.5em) {
     .section-clients {
       padding: 10rem 0 10rem 0; } }
@@ -615,7 +615,8 @@ animation-iteration-count:3;
     backface-visibility: hidden;
     border-radius: 50px 0px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    background-color: red; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -722,16 +723,13 @@ animation-iteration-count:3;
   @media (max-width: 56.25em) {
     .card {
       height: auto;
-      background-color: #fff;
-      width: 100%; }
+      background-color: #fff; }
       .card__side {
         height: 65rem;
         transition: all 1.5s ease-in-out;
         position: relative;
         box-shadow: none;
-        border-radius: 0;
-        width: 100%;
-        margin: 0 auto; }
+        border-radius: 0; }
         .card__side--front {
           background-color: #fff;
           height: 65rem; }
@@ -739,7 +737,6 @@ animation-iteration-count:3;
           transform: rotateY(0);
           height: 40rem;
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-          margin-top: -10rem;
           border-radius: 0; }
       .card:hover .card__side--front {
         transform: rotateY(0); }
@@ -764,57 +761,6 @@ animation-iteration-count:3;
       .card__info-description {
         font-size: 1.9rem;
         padding: 0 2rem; } }
-  @media (max-width: 37.5em) {
-    .card {
-      height: auto;
-      background-color: #fff; }
-      .card__side {
-        height: 90rem;
-        transition: all 1.5s ease-in-out;
-        position: relative; }
-        .card__side--front {
-          background-color: #fff;
-          height: 95rem; }
-        .card__side--back--back {
-          transform: rotateY(0);
-          height: 10rem;
-          clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
-          margin-top: -5rem;
-          border-radius: 0; }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0);
-        text-align: center; }
-        .card__cta a {
-          visibility: hidden; }
-      .card__info {
-        text-align: left;
-        color: #fff;
-        margin: 0;
-        padding-top: 5rem; }
-      .card__info-description {
-        font-size: 2.9rem;
-        text-align: center; }
-      .card__details {
-        padding: 0.5rem;
-        margin-top: 5rem; }
-        .card__details-2 {
-          text-align: center;
-          font-weight: 400;
-          height: 10rem; }
-        .card__details ul {
-          list-style: none;
-          width: 100%;
-          margin: 0 auto; }
-          .card__details ul li {
-            text-align: center;
-            font-size: 2.7rem; }
-            .card__details ul li:not(:last-child) {
-              border-bottom: 1px solid #eee; } }
 
 .story {
   width: 75%;
@@ -986,10 +932,6 @@ $ - any class that ends with "col-"
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -998,13 +940,6 @@ $ - any class that ends with "col-"
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
