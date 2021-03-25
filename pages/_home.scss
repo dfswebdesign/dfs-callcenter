@@ -9,7 +9,7 @@
 
 	@include respond(phone) {
 		padding: 25rem 0;
-		background-color: red;
+		// background-color: red;
 		text-align: center;
 	}
 }
@@ -31,6 +31,7 @@
 
 	@include respond(tab-port) {
 		padding: -15rem 15rem;
+		margin-top: -20vh;
 	}
 }
 
