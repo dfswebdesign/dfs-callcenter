@@ -306,8 +306,7 @@ animation-iteration-count:3;
     transform: skewY(-1deg); }
   @media (max-width: 56.25em) {
     .section-benefits {
-      padding: -15rem 15rem;
-      margin-top: -20vh; } }
+      padding: -15rem 15rem; } }
 
 .section-clients {
   background-color: #f7f7f7;
