@@ -17,6 +17,15 @@
 			position: relative;
 			width: 85%;
 			box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+			text-align: center;
+		}
+
+		@include respond(phone) {
+			float: left;
+			position: relative;
+			width: 75%;
+			box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+			text-align: center;
 		}
 
 		&--p1 {
@@ -26,6 +35,15 @@
 
 			@include respond(tab-port) {
 				top: 1rem;
+				left: 4.5rem;
+				transform: rotate(0deg);
+				border-radius: 1px;
+				transform: scale(1.2);
+			}
+
+			@include respond(phone) {
+				top: 1rem;
+				left: 6.5rem;
 				transform: rotate(0deg);
 				border-radius: 1px;
 				transform: scale(1.2);
@@ -33,16 +51,25 @@
 		}
 
 		&--p2 {
-			right: 0;
+			left: 0;
 			top: 9rem;
 			transform: rotate(0deg);
 
 			@include respond(tab-port) {
+				left: 4.5rem;
 				top: -5rem;
 				border-radius: 1px;
 				transform: scale(1);
 
 				// visibility: hidden;
+			}
+
+			@include respond(phone) {
+				top: 1rem;
+				left: 6.5rem;
+				transform: rotate(0deg);
+				border-radius: 1px;
+				transform: scale(1.2);
 			}
 		}
 
@@ -52,12 +79,20 @@
 			transform: rotate(20deg);
 
 			@include respond(tab-port) {
+				left: 4.5rem;
 				top: -5rem;
-				left: 0;
 				transform: rotate(0deg);
 				border-radius: 1px;
 				transform: scale(1.2);
 				z-index: 1;
+
+				@include respond(phone) {
+					top: 1rem;
+					left: 6.5rem;
+					transform: rotate(0deg);
+					border-radius: 1px;
+					transform: scale(1.2);
+				}
 
 				// visibility: hidden;
 			}
