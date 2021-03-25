@@ -30,7 +30,7 @@ body {
 
 	@include respond(phone) {
 		letter-spacing: 1rem;
-		font-size: 5rem;
+		font-size: 10rem;
 	}
 }
 
@@ -62,6 +62,13 @@ animation-iteration-count:3;
 	width: 70%;
 	margin-top: 2rem;
 	animation: moveInUp 3s ease-in-out;
+
+	@include respond(phone) {
+		font-size: 2.5rem;
+		float: none;
+		width: 85%;
+		letter-spacing: 0.35rem;
+	}
 }
 
 .heading-primary--sub2 {
@@ -74,6 +81,11 @@ animation-iteration-count:3;
 	margin: 0 auto;
 	margin-top: 2rem;
 	margin-bottom: 6rem;
+
+	@include respond(phone) {
+		font-size: 3rem;
+		width: 85%;
+	}
 }
 
 .header__link {
@@ -118,11 +130,14 @@ animation-iteration-count:3;
 	padding-top: 10rem;
 
 	@include respond(tab-port) {
-		font-size: 4rem;
+		font-size: 3rem;
+		width: 75%;
 	}
 
 	@include respond(phone) {
-		font-size: 3.5rem;
+		font-size: 5rem;
+		width: 85%;
+		margin-top: 10rem;
 	}
 
 	&:hover {
@@ -130,10 +145,10 @@ animation-iteration-count:3;
 		text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.5);
 	}
 
-	&-paragraph {
-		width: 75%;
-		margin: 0 auto;
-	}
+	// &-paragraph {
+	// 	width: 100%;
+	// 	margin: 0 auto;
+	// }
 }
 
 .heading-tertiary {
@@ -141,6 +156,11 @@ animation-iteration-count:3;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $color-secondary;
+
+	@include respond(phone) {
+		letter-spacing: 0.5rem;
+		font-size: 3rem;
+	}
 }
 
 .paragraph {
@@ -148,5 +168,11 @@ animation-iteration-count:3;
 
 	&:not(:last-child) {
 		margin-bottom: 3rem;
+	}
+
+	@include respond(phone) {
+		letter-spacing: 0.5rem;
+		font-size: 2.5rem;
+		background-color: blue;
 	}
 }

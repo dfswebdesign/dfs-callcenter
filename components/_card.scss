@@ -203,10 +203,10 @@
 	}
 
 	&__details {
-		// &-2 {
-		// 	text-align: center;
-		// 	font-weight: 400;
-		// }
+		&-2 {
+			text-align: center;
+			font-weight: 400;
+		}
 		padding: 3rem;
 		ul {
 			list-style: none;
@@ -233,7 +233,7 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		width: 95%;
+		width: 100%;
 	}
 
 	&__info {
@@ -251,5 +251,164 @@
 	&__info-description {
 		font-size: 1.6rem;
 		margin-bottom: 3.2rem;
+		padding: 0 2rem; //padding of description
+	}
+
+	// Media ***********************
+
+	@include respond(tab-port) {
+		height: auto; //increase height of card + line 9
+		background-color: $color-white;
+		width: 100%;
+
+		&__side {
+			height: 65rem;
+			transition: all 1.5s ease-in-out;
+			position: relative;
+			box-shadow: none;
+			border-radius: 0;
+			width: 100%;
+			margin: 0 auto;
+
+			&--front {
+				background-color: $color-white;
+				height: 65rem;
+			}
+
+			&--back {
+				transform: rotateY(0);
+				height: 40rem;
+				clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+				margin-top: -10rem;
+				border-radius: 0;
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(0); //this roates card
+		}
+
+		//Card front styling
+
+		//Front Styling
+
+		&__cta {
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0);
+			text-align: center;
+			width: 100%;
+
+			a {
+				visibility: hidden;
+			}
+		}
+
+		&__info {
+			text-align: left;
+			color: $color-white;
+			margin: 0;
+		}
+
+		&__info-title {
+			text-transform: uppercase;
+			// margin-bottom: 2rem;
+			text-align: center;
+			font-weight: 300;
+			visibility: hidden;
+		}
+
+		&__info-description {
+			font-size: 1.9rem;
+			padding: 0 2rem;
+		}
+	}
+
+	// PHONE MEDIA QUERY
+
+	@include respond(phone) {
+		height: auto; //increase height of card + line 9
+		background-color: $color-white;
+
+		&__side {
+			height: 90rem; //controls the height of the listed section
+			transition: all 1.5s ease-in-out;
+			position: relative;
+			// border-radius: 15px;
+
+			&--front {
+				background-color: $color-white;
+				height: 95rem;
+			}
+
+			&--back {
+				&--back {
+					transform: rotateY(0);
+					height: 10rem;
+					clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+					margin-top: -5rem;
+					border-radius: 0;
+				}
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(0); //this roates card
+		}
+
+		//Card front styling
+
+		//Front Styling
+
+		&__cta {
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0);
+			text-align: center;
+
+			a {
+				visibility: hidden;
+			}
+		}
+
+		&__info {
+			text-align: left;
+			color: $color-white;
+			margin: 0;
+			padding-top: 5rem;
+		}
+
+		&__info-description {
+			font-size: 2.9rem;
+			// padding: 0 5rem;
+			text-align: center;
+		}
+
+		&__details {
+			padding: 0.5rem;
+			margin-top: 5rem;
+			&-2 {
+				text-align: center;
+				font-weight: 400;
+				height: 10rem;
+			}
+
+			ul {
+				list-style: none;
+				width: 100%;
+				margin: 0 auto;
+
+				li {
+					text-align: center;
+					font-size: 2.7rem;
+
+					&:not(:last-child) {
+						border-bottom: 1px solid $color-grey-light-2;
+					}
+				}
+			}
+		}
 	}
 }

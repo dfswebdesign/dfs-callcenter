@@ -83,9 +83,10 @@
 		&:link,
 		&:visited {
 			display: inline-block;
-			font-size: 2.4rem;
+			font-size: 1.6rem;
+			letter-spacing: 0.21rem;
 			font-weight: 300;
-			padding: 1rem 2rem;
+			padding: 0.5rem 2rem;
 			text-transform: uppercase;
 			color: $color-white;
 			text-decoration: none;

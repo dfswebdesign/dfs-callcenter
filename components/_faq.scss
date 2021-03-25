@@ -3,7 +3,7 @@
 	margin: 0rem auto;
 	width: 100%;
 	// font-family: "Raleway", sans-serif;
-	background: $color-white;
+	// background: $color-white;
 
 	&__title {
 		font-size: 1.4rem;
@@ -20,6 +20,19 @@
 
 		&:hover {
 			background: $color-secondary;
+		}
+	}
+
+	&__photo {
+		position: relative;
+
+		img {
+			width: 90%;
+			position: absolute; //remove position absolute for media query
+			top: 0;
+			right: 20rem;
+			z-index: -1;
+			opacity: 0.4;
 		}
 	}
 }
@@ -39,3 +52,15 @@
 		display: block;
 	}
 }
+
+// .accordion__photo {
+// 	position: relative;
+
+// 	img {
+// 		width: 90%;
+// 		position: absolute;
+// 		top: 0;
+// 		right: 15rem;
+// 		z-index: -1;
+// 	}
+// }
