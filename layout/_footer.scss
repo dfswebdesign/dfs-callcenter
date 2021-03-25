@@ -7,6 +7,7 @@
 
 	@include respond(tab-port) {
 		padding: 8rem 0;
+		font-size: 1.3rem;
 	}
 
 	&__logo-box {
@@ -32,6 +33,7 @@
 		@include respond(tab-port) {
 			width: 100%;
 			text-align: center;
+			// visibility: hidden;
 		}
 	}
 
@@ -77,6 +79,7 @@
 		@include respond(tab-port) {
 			width: 100%;
 			float: none;
+			text-align: center;
 		}
 	}
 }

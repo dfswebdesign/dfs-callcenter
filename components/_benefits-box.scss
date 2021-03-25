@@ -11,17 +11,14 @@
 	outline-offset: 0.9rem;
 
 	@include respond(tab-port) {
-		padding: 1.5rem 0.5rem;
+		padding: 2.5rem 1rem;
+		border-radius: 0px;
 	}
 
 	&__icon {
 		font-size: 8.5rem;
 		margin-bottom: 0.5rem;
-		background-image: linear-gradient(
-			to right,
-			$color-primary-light,
-			$color-primary
-		);
+		background-image: linear-gradient(to right, $color-primary-light, $color-primary);
 		-webkit-background-clip: text;
 		color: transparent;
 

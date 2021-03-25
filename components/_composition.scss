@@ -4,7 +4,7 @@
 	position: relative;
 
 	&__photo {
-		width: 80%;
+		width: 95%;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
 		border-radius: 0 0 30px;
 		position: absolute;
@@ -15,7 +15,7 @@
 		@include respond(tab-port) {
 			float: left;
 			position: relative;
-			width: 33.33333%;
+			width: 100%;
 			box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
 		}
 
@@ -38,10 +38,11 @@
 			transform: rotate(0deg);
 
 			@include respond(tab-port) {
-				top: 0;
+				top: -5rem;
 				border-radius: 1px;
-				transform: scale(1.4);
-				z-index: 2000;
+				transform: scale(1);
+
+				// visibility: hidden;
 			}
 		}
 
@@ -51,11 +52,14 @@
 			transform: rotate(20deg);
 
 			@include respond(tab-port) {
-				top: 1rem;
+				top: -5rem;
 				left: 0;
 				transform: rotate(0deg);
 				border-radius: 1px;
 				transform: scale(1.2);
+				z-index: 1;
+
+				// visibility: hidden;
 			}
 		}
 

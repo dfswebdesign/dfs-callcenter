@@ -126,6 +126,7 @@ animation-iteration-count:3;
 
 	@include respond(tab-port) {
 		font-size: 3rem;
+		margin-top: -65rem;
 	}
 
 	@include respond(phone) {
