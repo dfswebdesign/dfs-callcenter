@@ -1,20 +1,23 @@
 .row {
 	max-width: $grid-width;
-
 	margin: 0 auto;
 
 	&:not(:last-child) {
 		margin-bottom: $gutter-vertical;
 
 		@include respond(tab-port) {
+			width: 100% !important;
 			margin-bottom: $gutter-vertical-sml;
 		}
 	}
 
 	@include respond(tab-port) {
 		max-width: 50rem;
-		padding: 0 3rem;
 	}
+
+	// @include respond(tab-port) {
+	// 	max-width: 50rem;
+	// }
 
 	@include clearfix; //applies to the float property
 
@@ -40,6 +43,7 @@ $ - any class that ends with "col-"
 
 		@include respond(tab-port) {
 			width: 100% !important;
+			margin-left: 0rem; // adjust right margin
 		}
 	}
 

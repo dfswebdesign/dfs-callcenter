@@ -5,8 +5,6 @@
 [1200 - 1800]: is where our normal style apply
 1800px + : Big desktop
 
-*/
-/*
 $breakpoint argument choices
 - phone
 - tab-port
@@ -30,9 +28,6 @@ html {
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
-    html {
-      font-size: 30%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -182,7 +177,8 @@ animation-iteration-count:3;
   /*Shorthand way of writing this property*/ }
   @media (max-width: 37.5em) {
     .heading-primary--sub {
-      letter-spacing: 0.5rem; } }
+      letter-spacing: 0.5rem;
+      font-size: 3.3rem; } }
 
 .heading-primary--sub1 {
   display: block;
@@ -192,6 +188,9 @@ animation-iteration-count:3;
   width: 70%;
   margin-top: 2rem;
   animation: moveInUp 3s ease-in-out; }
+  @media (max-width: 37.5em) {
+    .heading-primary--sub1 {
+      font-size: 1.3rem; } }
 
 .heading-primary--sub2 {
   display: block;
@@ -232,10 +231,11 @@ animation-iteration-count:3;
   padding-top: 10rem; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 3.5rem; } }
+      font-size: 2.5rem;
+      margin-top: -65rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
@@ -855,11 +855,11 @@ $ - any class that ends with "col-"
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
+        width: 100% !important;
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -874,7 +874,8 @@ $ - any class that ends with "col-"
           margin-bottom: 6rem; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
-        width: 100% !important; } }
+        width: 100% !important;
+        margin-left: 0rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -901,10 +902,16 @@ $ - any class that ends with "col-"
   /* Parent Element related to text-box*/
   -webkit-clip-path: polygon 0 0, 100% 0, 100% 85vh, 0 100%;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  @media (max-width: 56.25em) {
+    .header {
+      -webkit-clip-path: polygon 0 0, 100% 0, 90% 75vh, 0 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon 0 0, 100% 0, 90% 75vh, 0 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+      height: 85vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
