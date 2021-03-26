@@ -24,6 +24,7 @@
 		url(../img/lady-laughing.jpg);
 	background-size: cover;
 	transform: skewY(-7deg);
+	margin-top: -15vh;
 
 	& > * {
 		transform: skewY(-1deg); // skew the benefit boxes to its original position
