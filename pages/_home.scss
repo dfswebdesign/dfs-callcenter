@@ -31,7 +31,11 @@
 
 	@include respond(tab-port) {
 		padding: -15rem 15rem;
-		// margin-top: -20vh;
+		margin-top: -12vh;
+
+		@include respond(phone) {
+			transform: skewY(0);
+		}
 	}
 }
 

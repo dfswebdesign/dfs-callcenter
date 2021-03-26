@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
-	font-family: "roboto", sans-serif;
+	font-family: 'roboto', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.7;
@@ -67,7 +67,8 @@ animation-iteration-count:3;
 	@include respond(phone) {
 		// letter-spacing: 0.5rem;
 		// visibility: hidden;
-		font-size: 1.3rem;
+		font-size: 1.6rem;
+		width: 85%;
 	}
 }
 
@@ -81,6 +82,11 @@ animation-iteration-count:3;
 	margin: 0 auto;
 	margin-top: 2rem;
 	margin-bottom: 6rem;
+
+	@include respond(phone) {
+		text-align: center;
+		width: 85%;
+	}
 }
 
 .header__link {
@@ -113,11 +119,7 @@ animation-iteration-count:3;
 	text-transform: uppercase;
 	font-weight: 700;
 	display: inline-block;
-	background-image: linear-gradient(
-		to right,
-		$color-primary-light,
-		$color-primary
-	);
+	background-image: linear-gradient(to right, $color-primary-light, $color-primary);
 	-webkit-background-clip: text;
 	color: transparent;
 	letter-spacing: 2px;
@@ -132,6 +134,8 @@ animation-iteration-count:3;
 	@include respond(phone) {
 		font-size: 2.5rem;
 		margin-top: -65rem;
+		font-size: 2.5rem;
+		max-width: 85%;
 	}
 
 	&:hover {
@@ -140,7 +144,7 @@ animation-iteration-count:3;
 	}
 
 	&-paragraph {
-		width: 75%;
+		max-width: 75%;
 		margin: 0 auto;
 	}
 }
@@ -150,6 +154,11 @@ animation-iteration-count:3;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $color-secondary;
+
+	@include respond(phone) {
+		max-width: 75%;
+		margin: 0 auto;
+	}
 }
 
 .paragraph {
@@ -157,5 +166,11 @@ animation-iteration-count:3;
 
 	&:not(:last-child) {
 		margin-bottom: 3rem;
+
+		@include respond(phone) {
+			// background-color: blue;
+			padding: 2rem;
+			margin: 0 auto;
+		}
 	}
 }

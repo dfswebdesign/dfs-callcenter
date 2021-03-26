@@ -22,7 +22,7 @@
 
 			@include respond(phone) {
 				top: 3.5rem;
-				right: 3.5rem;
+				right: 3rem;
 			}
 		}
 	}
@@ -89,12 +89,7 @@
 			text-transform: uppercase;
 			color: $color-white;
 			text-decoration: none;
-			background-image: linear-gradient(
-				120deg,
-				transparent 0%,
-				transparent 50%,
-				$color-white 50%
-			);
+			background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
 			background-size: 240%;
 			transition: all 0.4s;
 
@@ -137,7 +132,7 @@
 
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			left: 0;
 			transition: all 0.2s;

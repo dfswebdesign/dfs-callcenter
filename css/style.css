@@ -135,7 +135,7 @@ body {
     transform: translateY(-1.5rem); } }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
@@ -190,7 +190,8 @@ animation-iteration-count:3;
   animation: moveInUp 3s ease-in-out; }
   @media (max-width: 37.5em) {
     .heading-primary--sub1 {
-      font-size: 1.3rem; } }
+      font-size: 1.6rem;
+      width: 85%; } }
 
 .heading-primary--sub2 {
   display: block;
@@ -202,6 +203,10 @@ animation-iteration-count:3;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 6rem; }
+  @media (max-width: 37.5em) {
+    .heading-primary--sub2 {
+      text-align: center;
+      width: 85%; } }
 
 .header__link:link, .header__link:visited {
   color: #f7f7f7;
@@ -236,12 +241,14 @@ animation-iteration-count:3;
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem;
-      margin-top: -65rem; } }
+      margin-top: -65rem;
+      font-size: 2.5rem;
+      max-width: 85%; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
   .heading-secondary-paragraph {
-    width: 75%;
+    max-width: 75%;
     margin: 0 auto; }
 
 .heading-tertiary {
@@ -249,11 +256,19 @@ animation-iteration-count:3;
   font-weight: 700;
   text-transform: uppercase;
   color: #dd8407; }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      max-width: 75%;
+      margin: 0 auto; } }
 
 .paragraph {
   font-size: 1.9rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+    @media (max-width: 37.5em) {
+      .paragraph:not(:last-child) {
+        padding: 2rem;
+        margin: 0 auto; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -306,7 +321,11 @@ animation-iteration-count:3;
     transform: skewY(-1deg); }
   @media (max-width: 56.25em) {
     .section-benefits {
-      padding: -15rem 15rem; } }
+      padding: -15rem 15rem;
+      margin-top: -12vh; } }
+  @media (max-width: 56.25em) and (max-width: 37.5em) {
+    .section-benefits {
+      transform: skewY(0); } }
 
 .section-clients {
   background-color: #f7f7f7;
@@ -625,6 +644,10 @@ animation-iteration-count:3;
     .benefit-box {
       padding: 2.5rem 1rem;
       border-radius: 0px; } }
+  @media (max-width: 37.5em) {
+    .benefit-box {
+      max-width: 85%;
+      margin-left: 3.5rem; } }
   .benefit-box__icon {
     font-size: 8.5rem;
     margin-bottom: 0.5rem;
@@ -633,7 +656,7 @@ animation-iteration-count:3;
     color: transparent; }
     @media (max-width: 56.25em) {
       .benefit-box__icon {
-        margin: 0; } }
+        margin: 0 auto; } }
   .benefit-box:hover {
     transform: translateY(-1.5rem) scale(1.03);
     outline: 0.5rem solid #dd8407; }
@@ -643,6 +666,11 @@ animation-iteration-count:3;
   -moz-perspective: 150rem;
   position: relative;
   height: 60rem; }
+  @media (max-width: 37.5em) {
+    .card {
+      max-width: 85%;
+      margin: 0 auto;
+      background-color: red; } }
   .card__side {
     height: 60rem;
     transition: all 1.5s ease-in-out;
@@ -654,6 +682,10 @@ animation-iteration-count:3;
     border-radius: 50px 0px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media (max-width: 37.5em) {
+      .card__side {
+        backface-visibility: hidden;
+        border-radius: 0px; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -1090,7 +1122,7 @@ $ - any class that ends with "col-"
   @media (max-width: 56.25em) and (max-width: 37.5em) {
     .navigation__button {
       top: 3.5rem;
-      right: 3.5rem; } }
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -1172,7 +1204,7 @@ $ - any class that ends with "col-"
     background-color: #333;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     transition: all 0.2s; }

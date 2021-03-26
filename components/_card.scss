@@ -5,6 +5,12 @@
 	position: relative;
 	height: 60rem; //increase height of card + line 9
 
+	@include respond(phone) {
+		max-width: 85%;
+		margin: 0 auto;
+		background-color: red;
+	}
+
 	&__side {
 		height: 60rem;
 		transition: all 1.5s ease-in-out;
@@ -17,6 +23,11 @@
 		overflow: hidden;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
+		@include respond(phone) {
+			backface-visibility: hidden;
+			border-radius: 0px;
+		}
+
 		&--front {
 			background-color: $color-white;
 		}
@@ -25,51 +36,27 @@
 			transform: rotateY(180deg); //test
 
 			&-1 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-secondary-light,
-					$color-secondary-dark
-				);
+				background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 			}
 
 			&-2 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-tertiary-light,
-					$color-tertiary-dark
-				);
+				background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 			}
 
 			&-3 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-card-1,
-					$color-card-2
-				);
+				background-image: linear-gradient(to right bottom, $color-card-1, $color-card-2);
 			}
 
 			&-4 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-card-3,
-					$color-card-4
-				);
+				background-image: linear-gradient(to right bottom, $color-card-3, $color-card-4);
 			}
 
 			&-5 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-card-5,
-					$color-card-6
-				);
+				background-image: linear-gradient(to right bottom, $color-card-5, $color-card-6);
 			}
 
 			&-6 {
-				background-image: linear-gradient(
-					to right bottom,
-					$color-card-7,
-					$color-card-8
-				);
+				background-image: linear-gradient(to right bottom, $color-card-7, $color-card-8);
 			}
 		}
 	}
@@ -93,40 +80,28 @@
 
 		&--1 {
 			background-image: url(../img/cruiseline.jpg),
-				linear-gradient(
-					to right bottom,
-					$color-secondary-light,
-					$color-secondary-dark
-				);
+				linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 		}
 
 		&--2 {
 			background-image: url(../img/home-improvement.jpeg),
-				linear-gradient(
-					to right bottom,
-					$color-tertiary-light,
-					$color-tertiary-dark
-				);
+				linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 		}
 
 		&--3 {
-			background-image: url(../img/medical.jpg),
-				linear-gradient(to right bottom, $color-card-1, $color-card-2);
+			background-image: url(../img/medical.jpg), linear-gradient(to right bottom, $color-card-1, $color-card-2);
 		}
 
 		&--4 {
-			background-image: url(../img/cable-tv.jpg),
-				linear-gradient(to right bottom, $color-card-3, $color-card-4);
+			background-image: url(../img/cable-tv.jpg), linear-gradient(to right bottom, $color-card-3, $color-card-4);
 		}
 
 		&--5 {
-			background-image: url(../img/accountant.jpg),
-				linear-gradient(to right bottom, $color-card-5, $color-card-6);
+			background-image: url(../img/accountant.jpg), linear-gradient(to right bottom, $color-card-5, $color-card-6);
 		}
 
 		&--6 {
-			background-image: url(../img/fitness-1.jpg),
-				linear-gradient(to right bottom, $color-card-7, $color-card-8);
+			background-image: url(../img/fitness-1.jpg), linear-gradient(to right bottom, $color-card-7, $color-card-8);
 		}
 	}
 
@@ -170,35 +145,19 @@
 		}
 
 		&--3 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-card-1, 1),
-				rgba($color-card-2, 0.85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($color-card-1, 1), rgba($color-card-2, 0.85));
 		}
 
 		&--4 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-card-3, 1),
-				rgba($color-card-4, 0.85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($color-card-3, 1), rgba($color-card-4, 0.85));
 		}
 
 		&--5 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-card-5, 1),
-				rgba($color-card-6, 0.85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($color-card-5, 1), rgba($color-card-6, 0.85));
 		}
 
 		&--6 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba($color-card-7, 1),
-				rgba($color-card-8, 0.85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($color-card-7, 1), rgba($color-card-8, 0.85));
 		}
 	}
 
