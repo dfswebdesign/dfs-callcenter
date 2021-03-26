@@ -669,8 +669,7 @@ animation-iteration-count:3;
   @media (max-width: 37.5em) {
     .card {
       max-width: 85%;
-      margin: 0 auto;
-      background-color: red; } }
+      margin: 0 auto; } }
   .card__side {
     height: 60rem;
     transition: all 1.5s ease-in-out;
