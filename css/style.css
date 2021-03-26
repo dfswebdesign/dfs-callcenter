@@ -364,6 +364,10 @@ animation-iteration-count:3;
   @media (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9), 100%), url(../img/contact-img-3.jpg); } }
+  @media (max-width: 56.25em) and (max-width: 37.5em) {
+    .contact {
+      width: 85%;
+      margin: 0 auto; } }
   .contact__form {
     width: 50%;
     padding: 6rem; }
@@ -922,7 +926,8 @@ animation-iteration-count:3;
   @media (max-width: 37.5em) {
     .accordion {
       top: 3.5rem;
-      right: 3.5rem; } }
+      right: 3.5rem;
+      max-width: 85%; } }
   .accordion__title {
     font-size: 1.4rem;
     text-transform: uppercase;

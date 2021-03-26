@@ -97,6 +97,11 @@
 	@include respond(tab-port) {
 		background-image: linear-gradient(to right, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9), 100%),
 			url(../img/contact-img-3.jpg);
+
+		@include respond(phone) {
+			width: 85%;
+			margin: 0 auto;
+		}
 	}
 
 	&__form {
