@@ -23,6 +23,9 @@
 			@include respond(phone) {
 				top: 3.5rem;
 				right: 3rem;
+
+				height: 5rem;
+				width: 5rem;
 			}
 		}
 	}
@@ -46,6 +49,9 @@
 		@include respond(phone) {
 			top: 3.5rem;
 			right: 3.5rem;
+
+			height: 3.5rem;
+			width: 3.5rem;
 		}
 
 		// transform: scale(80);
@@ -128,6 +134,11 @@
 			height: 2px;
 			background-color: $color-grey-dark-3;
 			display: inline-block;
+
+			@include respond(phone) {
+				width: 2rem;
+				height: 1.3px;
+			}
 		}
 
 		&::before,
@@ -143,6 +154,10 @@
 		}
 		&::after {
 			top: 0.8rem;
+		}
+
+		@include respond(phone) {
+			margin-top: 2.5rem;
 		}
 	}
 
