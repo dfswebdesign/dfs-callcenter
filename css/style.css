@@ -923,8 +923,7 @@ animation-iteration-count:3;
 .accordion {
   max-width: 60rem;
   margin: 0rem auto;
-  width: 100%;
-  background: #fff; }
+  width: 100%; }
   @media (max-width: 37.5em) {
     .accordion {
       top: 3.5rem;
@@ -953,7 +952,7 @@ animation-iteration-count:3;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.12rem;
-  border-right: 1px solid #eee; }
+  border-right: 1px solid #fff; }
   .accordion__copy__copy--open {
     display: block; }
 
