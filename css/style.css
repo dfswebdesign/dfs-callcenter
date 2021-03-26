@@ -307,7 +307,7 @@ animation-iteration-count:3;
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 20rem 0; } }
+      padding: 32rem 0; } }
   @media (max-width: 37.5em) {
     .section-features {
       padding: 25rem 0;
@@ -335,7 +335,7 @@ animation-iteration-count:3;
   margin-top: -15vh; }
   @media (max-width: 56.25em) {
     .section-clients {
-      padding: 15rem 0 10rem 0; } }
+      padding: 25rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;

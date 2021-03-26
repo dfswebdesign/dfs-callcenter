@@ -4,7 +4,7 @@
 	margin-top: -20vh; //This moves the section up to the hero section
 
 	@include respond(tab-port) {
-		padding: 20rem 0;
+		padding: 32rem 0;
 	}
 
 	@include respond(phone) {
@@ -47,7 +47,7 @@
 	margin-top: -15vh;
 
 	@include respond(tab-port) {
-		padding: 15rem 0 10rem 0;
+		padding: 25rem 0 10rem 0;
 	}
 }
 
