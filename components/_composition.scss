@@ -29,9 +29,9 @@
 		}
 
 		&--p1 {
-			left: 0;
-			top: -2rem;
-			transform: rotate(-20deg);
+			left: 2.5rem;
+			top: -3rem;
+			transform: rotate(-10deg);
 
 			@include respond(tab-port) {
 				top: 1rem;
@@ -51,9 +51,9 @@
 		}
 
 		&--p2 {
-			left: 0;
-			top: 9rem;
-			transform: rotate(0deg);
+			left: 4.8rem;
+			top: 12rem;
+			transform: rotate(-7deg);
 
 			@include respond(tab-port) {
 				left: 4.5rem;
@@ -74,9 +74,9 @@
 		}
 
 		&--p3 {
-			left: 10%;
-			top: 15rem;
-			transform: rotate(20deg);
+			left: 0%;
+			top: 18rem;
+			transform: rotate(10deg);
 
 			@include respond(tab-port) {
 				left: 4.5rem;
