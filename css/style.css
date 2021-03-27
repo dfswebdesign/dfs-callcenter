@@ -244,7 +244,7 @@ animation-iteration-count:3;
   color: transparent;
   letter-spacing: 2px;
   transition: all 1s ease-in-out;
-  padding-top: 10rem; }
+  padding-top: 1rem; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem;
@@ -301,6 +301,9 @@ animation-iteration-count:3;
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-lg {
       margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-huge {
+  margin-bottom: 15rem !important; }
 
 .u-margin-top-lg {
   margin-top: 8rem !important; }
@@ -391,8 +394,8 @@ animation-iteration-count:3;
         width: 100%; } }
 
 .accordion {
-  padding-bottom: 15rem;
-  background-image: #1d4354; }
+  background-image: #1d4354;
+  margin-bottom: 5rem; }
 
 .bg-video {
   position: absolute;
@@ -421,10 +424,13 @@ animation-iteration-count:3;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 70%;
+  width: 75%;
   display: block;
   transition: all 0.3s; }
   @media only screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
