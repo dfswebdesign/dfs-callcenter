@@ -99,6 +99,11 @@
 			background-size: 240%;
 			transition: all 0.4s;
 
+			@include respond(phone) {
+				padding: 0.5rem 2rem;
+				font-size: 1.9rem;
+			}
+
 			span {
 				margin-right: 1rem;
 				display: inline-block;

@@ -22,24 +22,34 @@ $breakpoint argument choices
 html {
   font-size: 62.5%;
   /*this allows us to use rem... 1 rem = 10px to convert 10px to percentage 10/16= 62.5%*/ }
-  @media (max-width: 75em) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 112.5em) {
+  @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem;
-  /*Apply padding around the page*/ }
-  @media (max-width: 56.25em) {
+  /*Apply padding around the page*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+  @media only screen and (max-width: 56.25em) {
     body {
       padding: 0;
       background-color: #fff; } }
+
+::selection {
+  background-color: #1d4354;
+  color: #fff; }
 
 @keyframes moveInLeft {
   0% {
@@ -158,7 +168,7 @@ body {
   /*Create animation to the heading text*/
   animation-duration: 3s;
   animation-timing-function: ease-in-out; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary--main {
       letter-spacing: 1rem;
       font-size: 5rem; } }
@@ -176,7 +186,7 @@ animation-iteration-count:3;
   letter-spacing: 1.75rem;
   animation: moveInRight 3s ease-in-out;
   /*Shorthand way of writing this property*/ }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary--sub {
       letter-spacing: 0.5rem;
       font-size: 3.3rem; } }
@@ -189,7 +199,7 @@ animation-iteration-count:3;
   width: 70%;
   margin-top: 2rem;
   animation: moveInUp 3s ease-in-out; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary--sub1 {
       font-size: 1.6rem;
       width: 85%; } }
@@ -204,7 +214,7 @@ animation-iteration-count:3;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 6rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-primary--sub2 {
       text-align: center;
       width: 85%; } }
@@ -234,12 +244,12 @@ animation-iteration-count:3;
   color: transparent;
   letter-spacing: 2px;
   transition: all 1s ease-in-out;
-  padding-top: 10rem; }
-  @media (max-width: 56.25em) {
+  padding-top: 1rem; }
+  @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem;
       margin-top: -65rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem;
       margin-top: -65rem;
@@ -257,7 +267,7 @@ animation-iteration-count:3;
   font-weight: 700;
   text-transform: uppercase;
   color: #dd8407; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
       max-width: 75%;
       margin: 0 auto; } }
@@ -266,7 +276,7 @@ animation-iteration-count:3;
   font-size: 1.9rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .paragraph:not(:last-child) {
         padding: 2rem;
         margin: 0 auto; } }
@@ -282,15 +292,18 @@ animation-iteration-count:3;
 
 .u-margin-bottom-med {
   margin-bottom: 4rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-med {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-lg {
   margin-bottom: 8rem !important; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-lg {
       margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-huge {
+  margin-bottom: 15rem !important; }
 
 .u-margin-top-lg {
   margin-top: 8rem !important; }
@@ -302,13 +315,13 @@ animation-iteration-count:3;
   margin-top: 10rem; }
 
 .section-features {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 25rem 0;
   margin-top: -20vh; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-features {
       padding: 32rem 0; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-features {
       padding: 25rem 0;
       text-align: center; } }
@@ -321,11 +334,11 @@ animation-iteration-count:3;
   margin-top: -15vh; }
   .section-benefits > * {
     transform: skewY(-1deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-benefits {
       padding: -15rem 15rem;
       margin-top: -12vh; } }
-  @media (max-width: 56.25em) and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
     .section-benefits {
       transform: skewY(0); } }
 
@@ -333,14 +346,14 @@ animation-iteration-count:3;
   background-color: #f7f7f7;
   padding: 25rem 0 20rem 0;
   margin-top: -15vh; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-clients {
       padding: 25rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }
 
@@ -348,7 +361,7 @@ animation-iteration-count:3;
   padding: 15rem;
   background-image: linear-gradient(to right bottom, #1d4354, #439bc4);
   transform: skewY(-7deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 10rem 0; } }
 
@@ -359,30 +372,30 @@ animation-iteration-count:3;
   border-radius: 1.3rem;
   box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.8);
   transform: skewY(7deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9), 100%, transparent 65%), url(../img/contact-img-3.jpg);
       background-size: cover; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9), 100%), url(../img/contact-img-3.jpg); } }
-  @media (max-width: 56.25em) and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
     .contact {
       width: 85%;
       margin: 0 auto; } }
   .contact__form {
     width: 50%;
     padding: 6rem; }
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       .contact__form {
         width: 65%; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
 
 .accordion {
-  padding-bottom: 15rem;
-  background-image: #1d4354; }
+  background-image: #1d4354;
+  margin-bottom: 5rem; }
 
 .bg-video {
   position: absolute;
@@ -411,10 +424,13 @@ animation-iteration-count:3;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 70%;
+  width: 75%;
   display: block;
   transition: all 0.3s; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
@@ -442,7 +458,7 @@ animation-iteration-count:3;
 .form__radio-group {
   width: 100%;
   display: inline-block; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .form__radio-group {
       width: 100%;
       margin-bottom: 1rem; } }
@@ -485,7 +501,7 @@ animation-iteration-count:3;
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 4rem;
+  padding: 1.2rem 4rem;
   display: inline-block;
   /* This allows the btn to use margin top*/
   border-radius: 10rem;
@@ -520,7 +536,7 @@ animation-iteration-count:3;
     background-color: #1d4354; }
 
 .btn::after {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -561,14 +577,14 @@ animation-iteration-count:3;
     z-index: 10;
     transition: all 0.8s;
     outline-offset: 1.5rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .composition__photo {
         float: left;
         position: relative;
         width: 85%;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
         text-align: center; } }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .composition__photo {
         float: left;
         position: relative;
@@ -579,14 +595,14 @@ animation-iteration-count:3;
       left: 2.5rem;
       top: -3rem;
       transform: rotate(-10deg); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 1rem;
           left: 4.5rem;
           transform: rotate(0deg);
           border-radius: 1px;
           transform: scale(1.2); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p1 {
           top: 1rem;
           left: 6.5rem;
@@ -597,13 +613,13 @@ animation-iteration-count:3;
       left: 4.8rem;
       top: 12rem;
       transform: rotate(-7deg); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           left: 4.5rem;
           top: -5rem;
           border-radius: 1px;
           transform: scale(1); } }
-      @media (max-width: 37.5em) {
+      @media only screen and (max-width: 37.5em) {
         .composition__photo--p2 {
           top: 1rem;
           left: 6.5rem;
@@ -614,7 +630,7 @@ animation-iteration-count:3;
       left: 0%;
       top: 18rem;
       transform: rotate(10deg); }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           left: 4.5rem;
           top: -5rem;
@@ -622,7 +638,7 @@ animation-iteration-count:3;
           border-radius: 1px;
           transform: scale(1.2);
           z-index: 1; } }
-  @media (max-width: 56.25em) and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
     .composition__photo--p3 {
       top: 1rem;
       left: 6.5rem;
@@ -646,11 +662,11 @@ animation-iteration-count:3;
   box-shadow: 0 1.5rem 4rem rbga(#000, 0.5);
   transition: transform 0.3s ease-in-out;
   outline-offset: 0.9rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .benefit-box {
       padding: 2.5rem 1rem;
       border-radius: 0px; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .benefit-box {
       max-width: 85%;
       margin-left: 3.5rem; } }
@@ -660,7 +676,7 @@ animation-iteration-count:3;
     background-image: linear-gradient(to right, #439bc4, #1d4354);
     -webkit-background-clip: text;
     color: transparent; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .benefit-box__icon {
         margin: 0 auto; } }
   .benefit-box:hover {
@@ -672,7 +688,7 @@ animation-iteration-count:3;
   -moz-perspective: 150rem;
   position: relative;
   height: 60rem; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .card {
       max-width: 85%;
       margin: 0 auto; } }
@@ -687,7 +703,7 @@ animation-iteration-count:3;
     border-radius: 50px 0px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .card__side {
         backface-visibility: hidden;
         border-radius: 0px; } }
@@ -800,12 +816,12 @@ animation-iteration-count:3;
   padding-left: 9rem;
   font-size: 1.9rem;
   transform: skewX(-12deg); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .story {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .story {
       transform: skew(0); } }
   .story > * {
@@ -820,7 +836,7 @@ animation-iteration-count:3;
     -webkit-shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12.01deg);
     position: relative; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-6rem) skewX(0); } }
   .story__img {
@@ -830,7 +846,7 @@ animation-iteration-count:3;
     backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .story__text {
         transform: skewX(0); } }
   .story__caption {
@@ -924,7 +940,7 @@ animation-iteration-count:3;
   max-width: 60rem;
   margin: 0rem auto;
   width: 100%; }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .accordion {
       top: 3.5rem;
       right: 3.5rem;
@@ -968,26 +984,26 @@ $ - any class that ends with "col-"
 */ }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         width: 100% !important;
         margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem; } }
   .row::after {
-    content: "";
+    content: '';
     display: table;
     clear: both; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important;
         margin-left: 0rem; } }
@@ -1017,12 +1033,12 @@ $ - any class that ends with "col-"
   /* Parent Element related to text-box*/
   -webkit-clip-path: polygon 0 0, 100% 0, 100% 85vh, 0 100%;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon 0 0, 100% 0, 90% 75vh, 0 100%;
       clip-path: polygon(0 0, 100% 0, 100% 90rem, 0 100%);
       height: 100rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon 0 0, 100% 0, 90% 75vh, 0 100%;
       clip-path: polygon(0 0, 100% 0, 100% 90rem, 0 100%);
@@ -1033,6 +1049,9 @@ $ - any class that ends with "col-"
     left: 4rem; }
   .header__logo {
     height: 5.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        height: 4.5rem; } }
   .header__text-box {
     position: absolute;
     top: 30%;
@@ -1050,28 +1069,28 @@ $ - any class that ends with "col-"
   font-size: 1.6rem;
   color: #f7f7f7;
   margin-top: -12rem; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 8rem 0;
       font-size: 1.3rem; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
     width: 45rem;
     height: auto;
     padding-top: 10rem; }
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       .footer__logo {
         width: 35rem; } }
   .footer__navigation {
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -1099,7 +1118,7 @@ $ - any class that ends with "col-"
     width: 65%;
     display: inline-block;
     float: right; }
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none;
@@ -1120,14 +1139,16 @@ $ - any class that ends with "col-"
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media (max-width: 56.25em) and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
     .navigation__button {
       top: 3.5rem;
-      right: 3rem; } }
+      right: 3rem;
+      height: 5rem;
+      width: 5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -1139,14 +1160,16 @@ $ - any class that ends with "col-"
   background-image: radial-gradient(#1d4354, #439bc4);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.027, 1); }
-  @media (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
-  @media (max-width: 37.5em) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
-      right: 3.5rem; } }
+      right: 3.5rem;
+      height: 3.5rem;
+      width: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -1183,6 +1206,10 @@ $ - any class that ends with "col-"
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 240%;
   transition: all 0.4s; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      padding: 0.5rem 2rem;
+      font-size: 1.9rem; } }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1rem;
     display: inline-block; }
@@ -1208,6 +1235,10 @@ $ - any class that ends with "col-"
     height: 2px;
     background-color: #333;
     display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 2rem;
+        height: 1.3px; } }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
@@ -1217,6 +1248,9 @@ $ - any class that ends with "col-"
     top: -0.8rem; }
   .navigation__icon::after {
     top: 0.8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__icon {
+      margin-top: 2.5rem; } }
 
 .navigation__button:hover .navigation__icon:before {
   top: -1rem; }
