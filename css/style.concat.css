@@ -843,6 +843,9 @@ animation-iteration-count:3;
   background-image: #1d4354;
   margin-bottom: 5rem; }
 
+.privacy {
+  background-color: red; }
+
 .bg-video {
   position: absolute;
   top: 0;
