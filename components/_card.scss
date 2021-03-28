@@ -210,4 +210,64 @@
 		font-size: 1.6rem;
 		margin-bottom: 3.2rem;
 	}
+
+	// MEDIA QUERY ******************************************
+
+	@include respond(tab-port) {
+		height: auto; //increase height of card + line 9
+		border-radius: 3px;
+		background-color: $color-white;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+		&__side {
+			height: 55rem;
+			position: relative;
+			box-shadow: none;
+			padding: 1rem;
+
+			&--front {
+				background-color: $color-white;
+			}
+
+			&--back {
+				transform: rotateY(0); //test
+				clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(0); //this roates card
+		}
+
+		//Card front styling
+
+		//Front Styling
+
+		&__cta {
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(0);
+			text-align: center;
+			width: 100%;
+			padding: 7rem 4rem 4rem 4rem;
+		}
+
+		&__info {
+			text-align: center;
+			color: $color-white;
+		}
+
+		&__info-title {
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+			text-align: center;
+			font-weight: 300;
+		}
+
+		&__info-description {
+			font-size: 1.6rem;
+			// margin-bottom: 3.2rem;
+		}
+	}
 }
