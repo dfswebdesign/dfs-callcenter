@@ -345,7 +345,7 @@ animation-iteration-count:3;
   transform: skewY(-7deg);
   margin-top: -15vh; }
   .section-benefits > * {
-    transform: skewY(-1deg); }
+    transform: skewY(0deg); }
   @media only screen and (max-width: 56.25em) {
     .section-benefits {
       padding: -15rem 15rem;
@@ -408,9 +408,6 @@ animation-iteration-count:3;
 .accordion {
   background-image: #1d4354;
   margin-bottom: 5rem; }
-
-.privacy {
-  background-color: red; }
 
 .bg-video {
   position: absolute;

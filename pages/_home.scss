@@ -27,7 +27,7 @@
 	margin-top: -15vh;
 
 	& > * {
-		transform: skewY(-1deg); // skew the benefit boxes to its original position
+		transform: skewY(0deg); // skew the benefit boxes to its original position
 	}
 
 	@include respond(tab-port) {
@@ -125,6 +125,6 @@
 	margin-bottom: 5rem;
 }
 
-.privacy {
-	background-color: red;
-}
+// .privacy {
+// 	background-color: red;
+// }
