@@ -176,8 +176,8 @@ animation-iteration-count:3;
 
 		@include respond(phone) {
 			// background-color: blue;
-			padding: 2rem;
-			margin: 0 auto;
+			max-width: 75%;
+			
 		}
 	}
 }
@@ -190,8 +190,8 @@ animation-iteration-count:3;
 	font-size: 1.9rem;
 
 	@include respond (phone) {
-		padding: 4rem;
-		text-align: center;
+		padding: 2.5rem;
+		text-align: left;
 		font-size: 1.6rem;
 
 	}
