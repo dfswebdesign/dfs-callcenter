@@ -73,10 +73,10 @@
 .contact {
 	//Created a clip path with these properties
 	background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9), 50%, transparent 50%),
-		url(../img/contact-img-3.jpg);
+		url(../img/contact-img-5.jpg);
 
 	background-size: cover; //100% can be used
-	background-position: center;
+	background-position: top;
 	border-radius: $border-radius;
 	box-shadow: 0 1.5 4rem rgba($color-black, 0.8);
 	transform: skewY(7deg);
@@ -90,7 +90,7 @@
 				100%,
 				transparent 65%
 			),
-			url(../img/contact-img-3.jpg);
+			url(../img/contact-img-5.jpg);
 
 		background-size: cover;
 	}

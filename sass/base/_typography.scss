@@ -24,7 +24,8 @@ body {
 	font-weight: 400;
 	letter-spacing: 2.5rem;
 
-	animation-name: moveInLeft; /*Create animation to the heading text*/
+	animation-name: moveInLeft;
+	/*Create animation to the heading text*/
 	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
 
@@ -47,7 +48,8 @@ animation-iteration-count:3;
 	font-weight: 400;
 	letter-spacing: 1.75rem;
 
-	animation: moveInRight 3s ease-in-out; /*Shorthand way of writing this property*/
+	animation: moveInRight 3s ease-in-out;
+	/*Shorthand way of writing this property*/
 
 	@include respond(phone) {
 		letter-spacing: 0.5rem;
@@ -90,6 +92,7 @@ animation-iteration-count:3;
 }
 
 .header__link {
+
 	&:link,
 	&:visited {
 		color: $color-grey-light-1;
@@ -136,6 +139,7 @@ animation-iteration-count:3;
 		margin-top: -65rem;
 		font-size: 2.5rem;
 		max-width: 85%;
+		margin-top: 5rem;
 	}
 
 	&:hover {
@@ -147,7 +151,7 @@ animation-iteration-count:3;
 		max-width: 75%;
 		margin: 0 auto;
 
-		
+
 	}
 }
 
@@ -162,7 +166,7 @@ animation-iteration-count:3;
 		max-width: 75%;
 		margin: 0 auto;
 		text-align: center;
-		
+
 	}
 }
 

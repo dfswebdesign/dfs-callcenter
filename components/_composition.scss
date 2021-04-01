@@ -119,7 +119,7 @@
 	img {
 		width: 100%;
 		transition: all 0.4s ease-in-out;
-		outline-offset: 1.5rem; // border spacing around the images
+		outline-offset: 1rem; // border spacing around the images
 
 		// @include respond (tab-port) {
 		// 	width: 85%;
@@ -128,7 +128,7 @@
 		// }
 
 		&:hover {
-			outline: 1rem solid $color-primary;
+			outline: 1rem solid $color-secondary;
 			transform: scale(1.1) translateY(-0.5rem);
 			box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
 		}

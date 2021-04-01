@@ -56,8 +56,8 @@
 	height: 65vh;
 	background-image: linear-gradient(
 			to right,
-			rgba($color-primary, 0.8),
-			rgba($color-primary-light, 0.8) /* apply gradient to background image*/
+			rgba($color-secondary-dark, 0.8),
+			rgba($color-secondary-light, 0.8) /* apply gradient to background image*/
 		),
 		url(../img/contact-img-4.jpg);
 	background-size: cover;
