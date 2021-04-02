@@ -68,18 +68,18 @@
       <img src="img/logo.png" alt="dfs logo" class="header__logo" />
     </div>
 
-    <div class="header__text-box">
-      <h1 class="heading--primary">
-        <span class="heading-primary--main">Work At Home</span>
-        <span class="heading-primary--sub">Become Your Own Boss!</span>
-        <span class="heading-primary--sub1">Thousands of people are working from the comfort of
+    <div class="header__text-box" >
+      <h1 class="heading--primary" >
+        <span class="heading-primary--main"  data-aos="zoom-in-up" data-aos-delay="600">Work At Home</span>
+        <span class="heading-primary--sub" data-aos="fade-up" data-aos-delay="1000">Become Your Own Boss!</span>
+        <span class="heading-primary--sub1" data-aos="fade-up" data-aos-delay="1400">Thousands of people are working from the comfort of
           their home. Now, you can provide exceptional and
           profesional customer support to America’s Top 500
           Companies and control your how much you earn each
           month.</span>
       </h1>
       <!-- bounce class added .. remove class if needed in animation folder -->
-      <a href="#contact" class="btn btn--white btn--animated bounce">Sign Up Today</a>
+      <a href="#contact" class="btn btn--white btn--animated " data-aos="zoom-in-left" data-aos-delay="1800">Sign Up Today</a>
     </div>
   </header>
 
@@ -188,7 +188,7 @@
         </h2>
       </div>
       <!-- END OF SECTION HEADING -->
-      <p class="heading-primary--sub2 "data-aos="fade-left" data-aos-delay="800">
+      <p class="heading-primary--sub2 " data-aos="fade-left" data-aos-delay="800">
         If you have been hustling with the rideshare companies or grocery shopping as a way to earn that extra income,
         there is a better and less stressful opportunity for you. Whether you are making extra money to pay off bills,
         save for a vacation, or splurging on a new pair of shoes, you can get the job done in your own home, on your own
@@ -198,7 +198,7 @@
         Business Owner, and begin a new journey in earning an income. <a href=""></a> Learn more &rarr;
       </p>
       </div>
-      <div class="row"  data-aos="zoom-in-up" data-aos-delay="800" >
+      <div class="row" data-aos="zoom-in-up" data-aos-delay="800">
         <div class="col-1-of-3">
           <div class="card">
 
@@ -348,7 +348,7 @@
         </div>
       </div>
 
-      <div class="row" data-aos="zoom-in-left" data-aos-delay="800" >
+      <div class="row" data-aos="zoom-in-left" data-aos-delay="800">
         <div class="col-1-of-3">
           <div class="card">
 
@@ -518,7 +518,7 @@
         </h2>
       </div>
 
-      <div class="row" data-aos="flip-left" data-aos-delay="800" >
+      <div class="row" data-aos="flip-left" data-aos-delay="800">
         <div class="story">
           <figure class="story__shape">
             <img src="img/person-man.jpg" alt="agent" class="story__img">
@@ -967,7 +967,11 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
+
+
+
+
+<script type="text/javascript">
     function add_chatwidget() {
       var hccid = 96933697;
       var nt = document.createElement("script");
@@ -1002,6 +1006,11 @@
 
       once: false, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
+    });
+  </script>
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut('very-slow');
     });
   </script>
   <script src="JS/script.js"></script>

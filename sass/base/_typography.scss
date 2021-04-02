@@ -24,10 +24,10 @@ body {
 	font-weight: 400;
 	letter-spacing: 2.5rem;
 
-	animation-name: moveInLeft;
+	// animation-name: moveInLeft;
 	/*Create animation to the heading text*/
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
+	// animation-duration: 3s;
+	// animation-timing-function: ease-in-out;
 
 	@include respond(phone) {
 		letter-spacing: 1rem;
@@ -48,7 +48,7 @@ animation-iteration-count:3;
 	font-weight: 400;
 	letter-spacing: 1.75rem;
 
-	animation: moveInRight 3s ease-in-out;
+	// animation: moveInRight 3s ease-in-out;
 	/*Shorthand way of writing this property*/
 
 	@include respond(phone) {
@@ -64,7 +64,8 @@ animation-iteration-count:3;
 	letter-spacing: 0.12rem;
 	width: 70%;
 	margin-top: 2rem;
-	animation: moveInUp 3s ease-in-out;
+	
+	// animation: moveInUp 3s ease-in-out;
 
 	@include respond(phone) {
 		// letter-spacing: 0.5rem;
