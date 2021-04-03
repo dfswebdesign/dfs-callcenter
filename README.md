@@ -10,3 +10,9 @@
 So I went away from the traditional way of building the site with normal html and css. Instead, I implemented the BEM model ( Block Element Modifier) which allowed me to build the site with different components, so instead of having one huge file, it was compartmentalized.
 
 Next, I used Sass, which just an extension to the CSS language. Now, in order to compile SASS into CSS code, I used a compiler. This now introduces the whole new world of the NPM eco system.
+
+⚡️ Modern UI Design + Animations
+⚡️ Four Page Layout
+⚡️ Styled with Custom SCSS
+⚡️ Fully Responsive
+⚡️ Valid HTML5 & CSS3
